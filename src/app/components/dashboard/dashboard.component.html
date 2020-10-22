@@ -1,0 +1,37 @@
+<app-toolbar></app-toolbar>
+<mat-drawer-container class="example-container" [hasBackdrop]="true">
+    <mat-drawer #drawer mode="push">
+      <mat-nav-list>
+        <div class="bottom-border pb-2 py-2">
+          <img mat-list-item src="../assets/img_avatar.png" width="120" class="rounded-circle mr-3 mb-3 d-block mx-auto text-center">
+        </div>
+        <a mat-list-item routerLink="/dashboard">
+          <mat-icon>insert_chart_outlined</mat-icon>
+          <span class="nav-link">Dashboard</span>
+        </a>
+  
+        <a mat-list-item routerLink="/home">
+          <mat-icon>home</mat-icon>
+          <span class="nav-link">Home</span>
+        </a>
+  
+        <a mat-list-item routerLink="/">
+          <mat-icon>exit_to_app</mat-icon>
+          <span class="nav-link">Exit</span>
+        </a>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+  
+      <button class="btn" (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      
+        <div class="content">
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h1 class="card-title">Dashboard</h1>
+                    <p class="card-text">dashboard works!</p>
+                </div>
+            </div>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

@@ -1,35 +1,5 @@
-<mat-drawer-container class="example-container" [hasBackdrop]="true">
-  <mat-drawer #drawer mode="push">
-    <mat-nav-list>
-      <!-- <div class="img">
-        <img mat-list-item width="120" src="../assets/img_avatar.png" alt="logo" class="mb-3 rounded-circle d-block ">
-      </div> -->
-      <div class="bottom-border pb-2 py-2">
-        <img mat-list-item src="../assets/img_avatar.png" width="120" class="rounded-circle mr-3 mb-3 d-block mx-auto text-center">
-        <!-- <a href="#" class="text-white">Helen Smith</a> -->
-      </div>
-      <a mat-list-item routerLink="/admin">
-        <mat-icon>insert_chart_outlined</mat-icon>
-        <span class="nav-link" routerLink="/dashboard">Dashboard</span>
-      </a>
 
-      <a mat-list-item routerLink="/">
-        <mat-icon>home</mat-icon>
-        <span class="nav-link">Home</span>
-      </a>
-
-      <a mat-list-item>
-        <mat-icon>exit_to_app</mat-icon>
-        <span class="nav-link">Exit</span>
-      </a>
-    </mat-nav-list>
-  </mat-drawer>
-  <mat-drawer-content>
-
-    <button class="btn" (click)="drawer.toggle()"><span class="material-icons"> format_align_justify </span></button>
-    
-    <div class="content">
       <router-outlet></router-outlet>
-    </div>
-  </mat-drawer-content>
-</mat-drawer-container>
+
+
+
