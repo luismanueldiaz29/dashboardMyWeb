@@ -9,7 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +17,6 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     DashboardComponent,
     LoginComponent,
     ToolbarComponent,
-    SidenavComponent
   ],
   imports: [
     BrowserModule,
