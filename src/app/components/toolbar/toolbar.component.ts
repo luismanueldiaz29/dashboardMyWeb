@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
-
+  showSpinner = false;
   constructor() { }
 
   ngOnInit(): void {
+    this.loadData();
+  }
+
+  loadData(){
+    this.showSpinner = true;
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 1500);
   }
 
 }
